@@ -1,99 +1,151 @@
-let arr=[1,'abhinav','chowdhary',null];
-let ans=arr.filter((value)=>{
-    if(typeof(value)=='string'){
-        return true;
-    }
-    else{
-        false;
-    }
-});
-console.log(ans);
+// let arr=[1,'abhinav','chowdhary',null];
+// let ans=arr.filter((value)=>{
+//     if(typeof(value)=='string'){
+//         return true;
+//     }
+//     else{
+//         false;
+//     }
+// });
+// console.log(ans);
 
 
-------------------------------------------------------
+// ------------------------------------------------------
 
 
-let arr=[10,20,30,40];
-let ans = arr.reduce((acc,curr)=>{
-    return acc+curr;
-},0);
-console.log(ans);
+// let arr=[10,20,30,40];
+// let ans = arr.reduce((acc,curr)=>{
+//     return acc+curr;
+// },0);
+// console.log(ans);
 
-------------------------------------------------------
+// ------------------------------------------------------
 
-let arr=[10,3,0,9,5,3,2];
-arr.sort((a,b)=>a-b);
-console.log(arr);
+// let arr=[10,3,0,9,5,3,2];
+// arr.sort((a,b)=>a-b);
+// console.log(arr);
 
------------------------------------------------------
+// -----------------------------------------------------
 
-let arr=[10,3,0,9,5,3,2];
-arr.sort((a,b)=>b-a);
-console.log(arr);
+// let arr=[10,3,0,9,5,3,2];
+// arr.sort((a,b)=>b-a);
+// console.log(arr);
 
 
-----------------------------------------------------
+// ----------------------------------------------------
 
-let arr=[10,3,0,9,5,3,2]
-console.log(arr.indexOf(9));
+// let arr=[10,3,0,9,5,3,2]
+// console.log(arr.indexOf(9));
 
----------------------------------------------------
+// ---------------------------------------------------
 
-let arr=[10,3,0,9,5,3,2]
-console.log(arr.includes(9));
+// let arr=[10,3,0,9,5,3,2]
+// console.log(arr.includes(9));
 
---------------------------------------------------------
+// --------------------------------------------------------
 
-let arr=[10,3,0,9,5];
-let res=arr.find(x=>x>5);
-console.log(res);
+// let arr=[10,3,0,9,5];
+// let res=arr.find(x=>x>5);
+// console.log(res);
 
-------------------------------------------------------------
-let arr = [10, 3, 0, 9, 5, 3, 2];
-let len = arr.length;
+// ------------------------------------------------------------
+// let arr = [10, 3, 0, 9, 5, 3, 2];
+// let len = arr.length;
 
-// for loop
-for (let idx = 0; idx < len; idx++) {
-    console.log(arr[idx]);
-}
+// // for loop
+// for (let idx = 0; idx < len; idx++) {
+//     console.log(arr[idx]);
+// }
 
-// forEach
-arr.forEach((value, index) => {
-    console.log(value, index);
-});
+// // forEach
+// arr.forEach((value, index) => {
+//     console.log(value, index);
+// });
 
-// object (fixed)
-let obj = {
-    name: "abhi",
-    age: 21,
-    weight: 76,
-    height: "6ft 2in"
-};
+// // object (fixed)
+// let obj = {
+//     name: "abhi",
+//     age: 21,
+//     weight: 76,
+//     height: "6ft 2in"
+// };
 
-for (let key in obj) {
-    console.log(key, obj[key]);
-}
+// for (let key in obj) {
+//     console.log(key, obj[key]);
+// }
 
-// for...of (array)
-let nums = [10, 20, 30, 40];
-for (let val of nums) {
-    console.log(val);
-}
+// // for...of (array)
+// let nums = [10, 20, 30, 40];
+// for (let val of nums) {
+//     console.log(val);
+// }
 
-// for...of (string)
-let name = "abhinav";
-for (let val of name) {
-    console.log(val);
-}
+// // for...of (string)
+// let name = "abhinav";
+// for (let val of name) {
+//     console.log(val);
+// }
 
-// sum function (fixed)
-let getSum = (arr) => {
-    let sum = 0;
-    arr.forEach((value) => {
-        sum += value;
-    });
-    return sum;
-};
+// // sum function (fixed)
+// let getSum = (arr) => {
+//     let sum = 0;
+//     arr.forEach((value) => {
+//         sum += value;
+//     });
+//     return sum;
+// };
 
-let totsum = getSum(nums);
-console.log(totsum);
+// let totsum = getSum(nums);
+// console.log(totsum);
+
+
+
+----------------------------------------------------------
+nxt day:-
+
+// sayHello();
+// function sayHello(){
+//     console.log("hello");
+// }
+// class Human{
+    
+// }
+// const obj1=new Human();
+
+// let greet =function(){
+//     console.log("greetings for the day");
+// }
+// greet();
+// function greetme(greet,fullname){
+//     console.log("hello",fullname);
+//     greet();
+// }
+// function greet(){
+//     console.log("greet")
+// }
+// greetme(greet,"abhinav");
+
+// function solve(num){
+//     return function(num){
+//         return num*num;
+//     }
+// }
+// let ans=solve(5);
+// let final=ans(10);
+// console.log(final);
+
+//function scoping
+// function say(){
+//     var name ="earth";
+//     console.log("hello",name);
+// }
+// //console.log(name); -> cant be accessed becoz function scoped
+// say();
+//--------------------------------------------------------------------
+// console.log(height);
+// {
+//     var height =180;
+// }
+// console.log(height);
+// //let and consnt are block scope cant be accesses like var 
+//-----------------------------------------------------------------------
